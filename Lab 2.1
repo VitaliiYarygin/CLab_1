@@ -5,23 +5,31 @@ using namespace std;
 
 int main()
 {
-    int x;
-    double y;
+    float x;
+    float y;
     
-    y = exp((1/x)+2); 
-    if (x >= 0) {
-        cout << "1. x greater than or equal to 0"; 
+    cin >> x; 
+    
+    y = exp(-x+2); 
+    
+    cout << "Result is: " << y;
+    
+    if (y >= 0) {
+        cout << "\nResult greater than or equal to 0"; 
         } 
         else {
-        cout << "1. x lower than 0";
+            cout << "\nResult lower than 0";
         }
+        
+    y = exp(1/x) * sin(1/(-x+3.2));
     
-    y = exp(1/x) * sin(1/(x+3,2));
-    if (x >= 0) {
-        cout << "\n2. x greater than or equal to 0"; 
+    cout << "\nResult is: " << y;
+    
+    if (y >= 0) {
+        cout << "\nResult greater than or equal to 0"; 
         } 
         else {
-        cout << "\n2. x lower than 0 ";
+            cout << "\nResult lower than 0 ";
         }
     
      return 0;
