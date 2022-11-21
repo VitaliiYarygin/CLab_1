@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int ipP1, ipP2, ipP3, ipP4;
+    cout << "Enter first part of IP: "; 
+    cin >> ipP1; cout << "\n";
+    cout << "Enter second part of IP: "; 
+    cin >> ipP2; cout << "\n";
+    cout << "Enter third part of IP: "; 
+    cin >> ipP3; cout << "\n";
+    cout << "Enter fourth part of IP: "; 
+    cin >> ipP4; cout << "\n";
+    
+    if (ipP1 <= 255 && ipP2 <= 255 && ipP3 <= 255 && ipP4 <= 255)
+    {
+        cout << "IP adress: " << ipP1 << "." << ipP2 << "." << ipP3 << "." << ipP4;
+    }
+    else
+    {
+        cout << "Ones or more between ur numbers in greater than 255";
+    }
+    
+    return 0;
+}
