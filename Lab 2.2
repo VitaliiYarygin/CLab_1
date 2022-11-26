@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    float x, y;
+    
+    cout << "Enter the x-coordinate of point A: ";
+    cin >> x;
+    cout << "Enter the y-coordinate of point A: ";
+    cin >> y;
+    
+    if (x >= -1 && x <= 0 && y <= 1 && y >=0) {
+        cout << "\nPoint A fell into the shaded area"; 
+    }
+        else if (x <= 1 && x >= 0 && y >= -1 && y < 0) {
+            cout << "\nPoint A fell into the shaded area"; 
+        }
+            else {
+                cout << "\nPoint A not fell into the shaded area";
+        }
+        
+        return 0;
+}
