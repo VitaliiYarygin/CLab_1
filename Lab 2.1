@@ -13,25 +13,21 @@ int main()
     
     y = exp(-x+2); 
     
-    cout << "Result is: " << y;
-    
-    if (y >= 0) {
-        cout << "\nResult greater than or equal to 0"; 
+    if (x >= 0) {
+        cout << "\n1. Result is: " << y; 
         } 
         else {
-            cout << "\nResult lower than 0";
+            cout << "\n1. x lower than or not equal 0";
         }
         
     y = exp(1/x) * sin(1/(-x+3.2));
     
-    cout << "\nResult is: " << y;
-    
-    if (y >= 0) {
-        cout << "\nResult greater than or equal to 0"; 
+        if (x < 0) {
+        cout << "\n2. Result is: " << y; 
         } 
         else {
-            cout << "\nResult lower than 0 ";
-        }
-    
+            cout << "\n2. x greater than 0";
+ 
      return 0;
+        }
 }
