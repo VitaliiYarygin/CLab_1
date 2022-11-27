@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int x, y, z;
+    
+    cout << "Enter the first number from 0 to 10: " ;
+    cin>> x;
+    cout << "Enter the second number from 0 to 10: ";
+    cin>> y;
+    cout << "Enter the third number from 0 to 10: ";
+    cin>> z;
+ 
+    if (x < 0 || x >= 10 || y < 0 || y >= 10 || z < 0 || z >= 10) {
+    cout << "\nError... A number less than 0 or greater than 10 was entered. Please try again.";
+    
+    return 0;
+    }
+    else {
+        cout << "\nEntered number N: " << x << y << z;
+    }
+
+    if (x >= 5 && y >= 5 && z >= 5) {
+        cout << "\nNumbers greater than 5 are added: " << x + y + z; 
+    }
+    else if (x <= 5 && y >= 5 && z >= 5) {
+        cout << "\nNumbers greater than 5 are added: " << y + z; 
+    }
+    else if (x >= 5 && y <= 5 && z >= 5) {
+        cout << "\nNumbers greater than 5 are added: " << x + z; 
+    }
+    else if (x >= 5 && y >= 5 && z <= 5) {
+        cout << "\nNumbers greater than 5 are added: " << x + y; 
+    }
+    else if (x <= 5 && y <= 5 && z >= 5) {
+        cout << "\nThere is one number greater than 5: " << z; 
+    }
+    else if (x <= 5 && y >= 5 && z <= 5) {
+        cout << "\nThere is one number greater than 5: " << y; 
+    }
+    else if (x >= 5 && y <= 5 && z <= 5) {
+        cout << "\nThere is one number greater than 5: " << x; 
+    }
+    else {
+        cout << "\n\nThere is no number greater than 5.";
+        }
+        
+        return 0;
+}
