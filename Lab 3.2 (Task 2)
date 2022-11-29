@@ -1,0 +1,65 @@
+{
+    int number; 
+    int info;
+    
+    cout << "Enter 0 to find out train numbers: ";
+    cin >> info;
+    
+    if (info == 0) {
+        cout << "Train numbers: ";
+        cout << "\n1. 1092; \n2. 0007; \n3. 1490; \n4. 0323; \n5. 0012; \n6. 4081; \n7. 4092.";
+    }
+    else{
+        cout << "Incorrect entered. Try again.";
+        
+        return 0;
+    }
+    
+    cout << "\n\nEnter the train number: ";
+    cin >> number;
+    
+    if (number == 1092 || number == 0007 || number == 1490 || number == 3023 || number == 1102 || number == 4081 || number == 4092) {
+    switch (number) {
+        case 1092:
+        cout << "\nTrain number: 1092";
+        cout << "\nDeparture point: Kyiv";
+        cout << "\nDestination: Lviv";
+        break;
+        case 0007:
+        cout << "\nTrain number: 0007";
+        cout << "\nDeparture point: Chernivtsi";
+        cout << "\nDestination: Kyiv";
+        break;
+        case 1490:
+        cout << "\nTrain number: 1490";
+        cout << "\nDeparture point: Odesa";
+        cout << "\nDestination: Kyiv";
+        break;
+        case 3023:
+        cout << "\nTrain number: 3023";
+        cout << "\nDeparture point: Kyiv";
+        cout << "\nDestination: Poltava";
+        break;
+        case 1102:
+        cout << "\nTrain number: 1102";
+        cout << "\nDeparture point: Kyiv";
+        cout << "\nDestination: Herson";
+        break;
+        case 4081:
+        cout << "\nTrain number: 4081";
+        cout << "\nDeparture point: Vinnytsia";
+        cout << "\nDestination: Kyiv";
+        break;
+        case 4092:
+        cout << "\nTrain number: 4092";
+        cout << "\nTrain number: Departure point: Ivano-Frankivsk";
+        cout << "\nTrain number: Destination: Kyiv";
+        break;
+    }
+    }
+    else {
+        cout << "\nIncorrect entered. Try again.";
+    }
+   
+    return 0;
+}
