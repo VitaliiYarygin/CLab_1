@@ -1,0 +1,56 @@
+#include <cstdlib>
+#include <iostream>
+#include <cmath>
+ 
+using namespace std;
+ 
+int main() {
+    
+    float x, y, a, b, h;
+ 
+    cout << "Enter the number a: ";
+    cin >> a;
+    cout << "Enter the number b: ";
+    cin >> b;
+    cout << "Enter the number h: ";
+    cin >> h;
+    
+    if (a > 6){
+        cout << "Error. Please, enter a number that is less than or equal to 6";
+        return 0;
+    }
+    
+    x = a;
+    y = 5 * pow(x, 3) + sqrt(-x + 6);
+    
+    cout << "\n------------------";
+    cout << "\n:   X  :    Y    :";
+    cout << "\n------------------";
+    cout << "\n:   " << x << "  :"; 
+    cout << "   " << y << "   :";
+    cout << "\n------------------";
+    
+    if (x < b) {
+    do {
+        x = x + h;
+        y = y + h;
+        cout << "\n:  " << x << "  :"; 
+        cout << " " << y << "  :";
+        cout << "\n------------------";
+    }
+    while (x < b);
+    }
+    
+    if (x > b) {
+    do {
+        x = x - h;
+        y = y - h;
+        cout << "\n:   " << x << "  :"; 
+        cout << " " << y << " :";
+        cout << "\n------------------";
+    }
+    while (x > b);
+    }
+    
+    return 0;
+}
