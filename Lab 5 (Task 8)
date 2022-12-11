@@ -1,0 +1,28 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+    int num, end;
+    int c, a, b;
+
+    cout<<"Enter any number: ";
+    cin>> num;
+
+    a = num % 10;
+    b = (int)log10(num); 
+    c = (int)(num / pow(10, b)); 
+    
+    end = a;
+    end *= (int)pow(10, b);
+    end += num % ((int)pow(10, b));
+    end -= a;
+    end += c;
+
+    cout<<"\nEnter number = " << num;
+    cout<<"\nNumber after swapping : " << end;
+
+    return 0;
+}
